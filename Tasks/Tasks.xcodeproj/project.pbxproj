@@ -21,6 +21,8 @@
 		D6337DEE21347AB000F376B7 /* AppearanceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6337DED21347AB000F376B7 /* AppearanceHelper.swift */; };
 		D6337DF12134867400F376B7 /* HelvetidoodlebyEdT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6337DF02134867400F376B7 /* HelvetidoodlebyEdT.ttf */; };
 		D6337DF321348F8100F376B7 /* minya nouvelle rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6337DF221348F8000F376B7 /* minya nouvelle rg.ttf */; };
+		D6337DF5213495C000F376B7 /* JosefinSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6337DF4213495C000F376B7 /* JosefinSlab-Regular.ttf */; };
+		D6337DF721349E5F00F376B7 /* InriaSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6337DF621349E5F00F376B7 /* InriaSerif-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		D6337DED21347AB000F376B7 /* AppearanceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceHelper.swift; sourceTree = "<group>"; };
 		D6337DF02134867400F376B7 /* HelvetidoodlebyEdT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelvetidoodlebyEdT.ttf; sourceTree = "<group>"; };
 		D6337DF221348F8000F376B7 /* minya nouvelle rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "minya nouvelle rg.ttf"; sourceTree = "<group>"; };
+		D6337DF4213495C000F376B7 /* JosefinSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSlab-Regular.ttf"; sourceTree = "<group>"; };
+		D6337DF621349E5F00F376B7 /* InriaSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InriaSerif-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 			children = (
 				D6337DF02134867400F376B7 /* HelvetidoodlebyEdT.ttf */,
 				D6337DF221348F8000F376B7 /* minya nouvelle rg.ttf */,
+				D6337DF4213495C000F376B7 /* JosefinSlab-Regular.ttf */,
+				D6337DF621349E5F00F376B7 /* InriaSerif-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -191,8 +197,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6337DF721349E5F00F376B7 /* InriaSerif-Regular.ttf in Resources */,
 				9D4408D1211FF434005E2116 /* LaunchScreen.storyboard in Resources */,
 				9D4408CE211FF434005E2116 /* Assets.xcassets in Resources */,
+				D6337DF5213495C000F376B7 /* JosefinSlab-Regular.ttf in Resources */,
 				D6337DF12134867400F376B7 /* HelvetidoodlebyEdT.ttf in Resources */,
 				9D4408CC211FF431005E2116 /* Main.storyboard in Resources */,
 				D6337DF321348F8100F376B7 /* minya nouvelle rg.ttf in Resources */,
