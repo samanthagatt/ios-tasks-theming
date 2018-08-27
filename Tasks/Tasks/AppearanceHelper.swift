@@ -17,6 +17,7 @@ enum Appearance {
     static var mainTextColor = UIColor(red: 89.0/255.0, green: 89.0/255.0, blue: 89.0/255.0, alpha: 1.0)
     
     static var navBarTitleFont = UIFont(name: "Minya Nouvelle", size: 40)!
+    static var barButtonFont = UIFont(name: "Minya Nouvelle", size: 20)!
     
     static func setUpColoredTheme() {
         
@@ -27,11 +28,13 @@ enum Appearance {
         UINavigationBar.appearance().barTintColor = navColor
         
         let navBarTitleFontMetrics = UIFontMetrics(forTextStyle: .title1).scaledFont(for: navBarTitleFont)
-        let navBarTitleText = [NSAttributedStringKey.foregroundColor : mainTextColor, NSAttributedStringKey.font: navBarTitleFontMetrics]
+        let navBarTitleText = [NSAttributedStringKey.foregroundColor : mainTextColor, NSAttributedStringKey.font : navBarTitleFontMetrics]
         UINavigationBar.appearance().titleTextAttributes = navBarTitleText
         UINavigationBar.appearance().largeTitleTextAttributes = navBarTitleText
         
         UIBarButtonItem.appearance().tintColor = accentColor
+        let barButtonAttributes = [NSAttributedStringKey.font : barButtonFont, NSAttributedStringKey.foregroundColor : accentColor]
+        UIBarButtonItem.appearance().setTitleTextAttributes(barButtonAttributes, for: .normal)
         
         
         // MARK: - TableView
@@ -44,9 +47,19 @@ enum Appearance {
         // MARK: - Detail view
         
         UISegmentedControl.appearance().tintColor = accentColor
+        let segmentedFont = [NSAttributedStringKey.font: textFont(fontName: "Minya Nouvelle", textStyle: .body, pointSize: 20)]
+        UISegmentedControl.appearance().setTitleTextAttributes(segmentedFont, for: .normal)
+        
         UITextField.appearance().tintColor = accentColor
         UITextField.appearance().backgroundColor = mainColor
+        UITextField.appearance().font = Appearance.textFont(fontName: "Josefin Slab", textStyle: .body, pointSize: 20)
+        UITextField.appearance().textColor = mainTextColor
+        
         UITextView.appearance().backgroundColor = mainColor
+        UITextView.appearance().font = Appearance.textFont(fontName: "Josefin Slab", textStyle: .body, pointSize: 20)
+        UITextView.appearance().textColor = mainTextColor
+
+        UILabel.appearance(whenContainedInInstancesOf: [TaskDetailViewController.self]).font = Appearance.textFont(fontName: "Minya Nouvelle", textStyle: .body, pointSize: 20)
     }
     
     static func textFont(fontName: String, textStyle: UIFontTextStyle, pointSize: CGFloat) -> UIFont {
