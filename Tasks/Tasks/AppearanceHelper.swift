@@ -26,11 +26,10 @@ enum Appearance {
         
         UINavigationBar.appearance().barTintColor = navColor
         
-        
         let navBarTitleFontMetrics = UIFontMetrics(forTextStyle: .title1).scaledFont(for: navBarTitleFont)
-        let navBarTitleTextColor = [NSAttributedStringKey.foregroundColor : mainTextColor, NSAttributedStringKey.font: navBarTitleFontMetrics]
-        UINavigationBar.appearance().titleTextAttributes = navBarTitleTextColor
-        UINavigationBar.appearance().largeTitleTextAttributes = navBarTitleTextColor
+        let navBarTitleText = [NSAttributedStringKey.foregroundColor : mainTextColor, NSAttributedStringKey.font: navBarTitleFontMetrics]
+        UINavigationBar.appearance().titleTextAttributes = navBarTitleText
+        UINavigationBar.appearance().largeTitleTextAttributes = navBarTitleText
         
         UIBarButtonItem.appearance().tintColor = accentColor
         

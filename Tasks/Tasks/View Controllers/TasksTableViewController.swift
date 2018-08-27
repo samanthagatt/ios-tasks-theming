@@ -13,6 +13,9 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.sectionHeaderHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedSectionHeaderHeight = 25
     }
     
     @IBAction func refresh(_ sender: Any) {
