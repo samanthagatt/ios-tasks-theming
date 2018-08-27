@@ -37,8 +37,17 @@ enum Appearance {
         
         // MARK: - TableView
         
+        UITableView.appearance().backgroundColor = mainColor
         UITableView.appearance().separatorColor = accentColor
         UITableViewCell.appearance().backgroundColor = mainColor
+        
+        
+        // MARK: - Detail view
+        
+        UISegmentedControl.appearance().tintColor = accentColor
+        UITextField.appearance().tintColor = accentColor
+        UITextField.appearance().backgroundColor = mainColor
+        UITextView.appearance().backgroundColor = mainColor
     }
     
     static func textFont(fontName: String, textStyle: UIFontTextStyle, pointSize: CGFloat) -> UIFont {

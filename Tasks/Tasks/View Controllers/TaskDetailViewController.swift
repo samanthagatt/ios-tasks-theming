@@ -58,6 +58,9 @@ class TaskDetailViewController: UIViewController {
         }
         priorityControl.selectedSegmentIndex = TaskPriority.allPriorities.index(of: priority)!
         notesTextView.text = task?.notes
+        
+        // Theme
+        view.backgroundColor = Appearance.mainColor
     }
     
     // MARK: Properties
